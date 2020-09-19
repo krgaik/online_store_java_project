@@ -1,4 +1,7 @@
 package karolina.projects.online_store_project.Repository;
 
-public interface CategoryRepo {
+import karolina.projects.online_store_project.Model.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepo extends JpaRepository<Category, Long> {
 }

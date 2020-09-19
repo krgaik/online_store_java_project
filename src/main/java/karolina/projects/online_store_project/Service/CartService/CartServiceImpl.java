@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CartSerivceImpl implements CartService {
+public class CartServiceImpl implements CartService {
 
     @Autowired
     AddToCartRepo addCartRepo;
@@ -22,7 +22,7 @@ public class CartSerivceImpl implements CartService {
     CheckoutRepo checkOutRepo;
     @Autowired
     ProductServices proServices;
-    private static final Logger logger = LoggerFactory.getLogger(CartSerivceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(CartServiceImpl.class);
 
     @Override
     public List<AddtoCart> addCartbyUserIdAndProductId(long productId, long userId, int qty, double price) throws Exception {
